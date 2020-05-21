@@ -1,6 +1,8 @@
 import React from 'react';
 //import './App.css';
-import Measurements from './components/Measurements';
+import Measurements from './views/myViews/Measurements';
+import EcoIcon from '@material-ui/icons/Eco';
+import SpaIcon from '@material-ui/icons/Spa';
 
 function App() {
   return (

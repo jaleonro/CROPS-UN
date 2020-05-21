@@ -1,8 +1,8 @@
 import React from 'react';
-import Button from '@material-ui/core/Button';
 import { useFirebaseApp, useFirestoreCollection } from 'reactfire';
 import 'firebase/firestore';
-import MeasurementCard from './MeasurementCard';
+import MeasurementCard from "myComponents/MeasurementCard.js";
+import MeasurementCardT from "myComponents/MeasurementCardT.js";
 import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
 import { makeStyles } from '@material-ui/core/styles';
@@ -38,16 +38,16 @@ function Measurements() {
       <Grid item xs={6}>
         <MeasurementCard></MeasurementCard>
       </Grid>
-      <Grid item xs={3}>
-        <Paper className={classes.paper}>xs=3</Paper>
-      </Grid>
-      <Grid item xs={3}>
+      <Grid item xs={4}>
         <MeasurementCard></MeasurementCard>
       </Grid>
-      <Grid item xs={3}>
+      <Grid item xs={2}>
+        <MeasurementCardT></MeasurementCardT>
+      </Grid>
+      <Grid item xs={2}>
       <MeasurementCard></MeasurementCard>
       </Grid>
-      <Grid item xs={3}>
+      <Grid item xs={4}>
         <Paper className={classes.paper}>xs=3</Paper>
       </Grid>
     </Grid>
