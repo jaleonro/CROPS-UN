@@ -1,8 +1,8 @@
 import React from 'react';
+import { Route } from 'react-router-dom';
 //import './App.css';
-import Measurements from './views/myViews/Measurements';
-import EcoIcon from '@material-ui/icons/Eco';
-import SpaIcon from '@material-ui/icons/Spa';
+import MainView from './views/myViews/MainView';
+import View2 from './views/myViews/View2';
 
 function App() {
   return (
@@ -11,7 +11,8 @@ function App() {
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
       </header>
-      <Measurements />
+      <Route path="/" exact component={MainView}></Route>
+      <Route path="/resultados" exact component={View2}></Route>
     </div>
   );
 }

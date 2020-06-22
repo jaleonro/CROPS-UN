@@ -1,11 +1,10 @@
 const firebaseConfig = {
-  apiKey: "AIzaSyB9wgrtI7Vc2PHk4YrMPCaWt1IniYRXwOI",
-  authDomain: "crops-un.firebaseapp.com",
-  databaseURL: "https://crops-un.firebaseio.com",
-  projectId: "crops-un",
-  storageBucket: "crops-un.appspot.com",
-  messagingSenderId: "208899855682",
-  appId: "1:208899855682:web:428bd986e5654bd551e4db",
-  measurementId: "G-NH1JG9WB4V"
+  apiKey: "AIzaSyBwG0waxRTiTqco8if0G-AM1Ikvq9gkA8Q",
+  authDomain: "monitoreoycontroldecultivos.firebaseapp.com",
+  databaseURL: "https://monitoreoycontroldecultivos.firebaseio.com",
+  projectId: "monitoreoycontroldecultivos",
+  storageBucket: "monitoreoycontroldecultivos.appspot.com",
+  messagingSenderId: "562628689991",
+  appId: "1:562628689991:web:48d039b5c7e4c2b77b3162"
 };
 export default firebaseConfig;

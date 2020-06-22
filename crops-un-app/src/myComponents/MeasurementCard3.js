@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from "react";
-import firebase from "firebase";
 // material-ui
 import { makeStyles } from "@material-ui/core/styles";
 // @material-ui/icons
-import WbSunnyIcon from '@material-ui/icons/WbSunny';
+import WavesIcon from '@material-ui/icons/Waves';
 import ScheduleIcon from '@material-ui/icons/Schedule';
 // core components
 import Card from "components/Card/Card.js";
@@ -15,32 +14,19 @@ import dashboardStyle from "../assets/jss/material-dashboard-react/views/dashboa
 
 const useStyles = makeStyles(dashboardStyle);
 
-
-export default function MeasurementCardT(props) {
-  const [valor, setValor] = useState(0);
-
-  useEffect(() => {
-    const nameRef = firebase.database().ref('sensor1').limitToLast(1);
-    console.log(nameRef);
-    nameRef.on('child_added', snapshot => {
-      console.log(snapshot.child("sensorb").val());
-      setValor(
-        snapshot.child("sensorb").val()
-      );
-     })
-  });
-
+export default function MeasurementCard3(props) {
+  const [value, setValue] = useState(0);
 
   const classes = useStyles();
   return (
     <div>
     <Card>
-    <CardHeader color="danger" stats icon>
-      <CardIcon color="danger">
-        <WbSunnyIcon/>
+    <CardHeader color="primary" stats icon>
+      <CardIcon color="primary">
+        <WavesIcon/>
       </CardIcon>
-      <p className={classes.cardCategory}>TEMPERATURA</p>
-      <h1 className={classes.cardTitle}>{valor}</h1>
+      <p className={classes.cardCategory}>HUMEDAD RELATIVA</p>
+      <h1 className={classes.cardTitle}>{value}</h1>
     </CardHeader>
     <CardFooter stats>
       <div className={classes.stats}>
